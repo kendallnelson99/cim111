@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Parisienne|Reenie+Beanie&display=swap');
+
+
+    body{
+      background-color:blue;
+      background-color:chartreuse;
+      background-color:Aquamarine;
+}
+
+      section{
+        background-color: white;
+background-color: rgb(255,255,255,0.5)
+/* white with a 50% opacity */
+    }
+    h1{
+color: violet;
+    }
+    h2{
+  color:Crimson;
+}
+    h2 em{
+  font-family:sans-serif;
+}
+    ul li{
+list-style:circle;
+font-family: 'Reenie Beanie', cursive;
+
+}
+      ul li{
+      list-style:none;
+}
+    a{
+  color:grey;
+  text-decoration: none;
+  /* removes underline */
+}
+a:hover{
+  background-color: purple;
+}
+a:visited{
+color:green;
+}
+/* # = ID */
+#name{
+  text-align:center;
+  font-family: 'Parisienne', cursive;
+}
+
+.underline{
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+/* important to know for homework */
