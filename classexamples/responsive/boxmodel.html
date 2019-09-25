@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Box Model</title>
-<style >
+<style media="screen">
 
       header{
-  background-color: green;
+  background-color: plum;
   width:920px;
-  height:100px;
+  height:auto;
   padding:20px 20px 20px 20px;
 
   border-width: 0px 0px 5px 0px;
@@ -23,7 +23,7 @@
 }
 
       main{
-        background-color: yellow;
+        background-color: palegreen;
         width:910px;
         /* height:100px; */
         height:auto;
@@ -46,11 +46,57 @@
   }
 
       footer{
-background-color: green;
+background-color: plum;
 width:910px;
 height:100px;
 margin: 0 auto;
   }
+  nav{
+background-color: skyblue;
+    width: 500px;
+    margin: 0 auto; /*centers*/
+  }
+
+  nav ul{
+
+
+  }
+
+  nav ul li {
+list-style: none;
+display: inline-block;  /*put next to each other */
+margin-right:20px;
+padding:10px;
+
+  }
+
+
+nav ul li a {
+text-decoration: none;
+color: black;
+font-size:20px;
+
+}
+nav ul li:hover {
+background-color:white;
+padding:10px;
+
+}
+
+section img{
+width:435px;
+display: inline-block;
+margin-left:5px;
+margin-right:5px;
+}
+
+section p{
+width: 435px;
+display: inline-block;
+margin-left:5px;
+margin-right:5px;
+vertical-align:top;
+}
 
 </style>
 
@@ -58,21 +104,44 @@ margin: 0 auto;
   </head>
   <body>
         <header>
-          <h1>Header</h1>
+          <h1 id="Home">Header</h1>
+          <nav>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+              </ul>
+          </nav>
+
+
+
           </header>
           <main>
-            <h1>Main</h1>
+            <div>
+            <h1 id="aboutme">Main</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+</div>
+<section>
+<img src="https://live.staticflickr.com/1030/4725532325_bd3b521346_b.jpg" alt="Image1">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+</section>
+
+<section id="hobbies">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<img src="https://farm6.staticflickr.com/5800/21224671495_43e61e976a_b.jpg" alt="Image2">
+
+</section>
             </main>
 
 <footer>
-      <h1>footer</h1>
+      <h1>Footer</h1>
 </footer>
 
 
-
+<!-- image1 "Duck 4-24-2010 2-24-03 PM" by JimWienecke is licensed under CC BY-NC-ND 2.0  -->
+<!-- image 2 "Ducks" by Sean MacEntee is licensed under CC BY 2.0  -->
 
 
   </body>
