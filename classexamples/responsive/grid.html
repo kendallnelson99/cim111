@@ -6,9 +6,9 @@
     <style media="screen">
 
           header{
-                width:960px;
-                height:100px;
-                background-color: Orange;
+                width: 960px;
+                height: 100px;
+                background-color: orange;
                 margin: 0 auto;
 }
 
@@ -35,11 +35,54 @@
               margin: 0 auto;
               display: grid;
               grid-template-rows: 300px;
-              grid-template-columns: 300px 300px 300px;
+              grid-template-columns: 280px 300px 280px;
+              grid-column-gap: 20px;
 
 }
           #grid1image{
             width: 300px;
+          }
+
+
+          #grid2{
+              width:900px;
+              height: auto;
+              margin: 0 auto;
+              display: grid;
+              grid-template-rows: 300px;
+              grid-template-columns: 280px 300px 280px;
+              grid-column-gap: 20px;
+
+}
+          #grid2 section img{
+            width:300px
+          }
+
+          #grid3 {
+            width:590px;
+            height:auto;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: 1fr;
+            /* frame or fr size is determined by the size of the largest element*/
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
+
+          }
+          #grid3 section img{
+            width:300px;
+
+          }
+
+          #grid4{
+width:900px;
+height: auto;
+margin:0 auto;
+display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 2fr;
+/* create 2 columns where the second column is going to span 2 frames */
+
           }
 
 
@@ -61,6 +104,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
     <image id="grid1image" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/3a7dee53902717.594bd462dbec1.jpg" alt=" Ice Cream cone">
       <!-- "Ice cream cone" by Mariya Shapoval (Pomatilova) is licensed under CC BY-NC-ND 4.0 -->
 
+
     <p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -69,6 +113,62 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 
 </section>
+
+
+
+<section id="grid2">
+            <section>
+<h1>Ice Cream Flavors</h1>
+
+<ul>
+<li>Chocolate</li>
+<li>Strawberry</li>
+<li>Vanilla</li>
+
+</ul>
+          </section>
+
+
+<section>
+<img id="grid1image" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/3a7dee53902717.594bd462dbec1.jpg" alt=" Ice Cream cone">
+<p> This is a picture fun of ice cream</p>
+
+</section>
+
+
+
+<section>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+
+
+
+
+
+
+</section>
+
+<section id="grid3">
+<section>
+  <img id="grid3image" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/3a7dee53902717.594bd462dbec1.jpg" alt=" Ice Cream cone">
+  <h1>About Ice cream</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+
+  <section>
+    <img id="grid3image" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/3a7dee53902717.594bd462dbec1.jpg" alt=" Ice Cream cone">
+    <p>More Ice Cream</p>
+    </section>
+
+    </section
+<section id="grid4">
+<h1>More about Ice Cream</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+</section>
+
 
     </main>
 
