@@ -1,0 +1,119 @@
+
+      header{
+  background-color: plum;
+  width:920px;
+  height:auto;
+  padding:20px 20px 20px 20px;
+
+  border-width: 0px 0px 5px 0px;
+  border-style: solid;
+  border-color: black;
+
+  margin: 10px auto 30px auto; /*top right bottom left*/
+  margin-top: -10px;
+
+
+
+}
+
+      main{
+        background-color: palegreen;
+        width:910px;
+        /* height:100px; */
+        height:auto;
+        /* automatically adjusts the height of your container */
+        padding:20px;  /*add 20px top, right, bottom, and left*/
+        /* this is the same thing as below */
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+
+        border-width:5px;
+        border-style: dashed;
+        border-color: RGB(0,127,0);
+/* margin adjusts spacing around contianer, setting left and right to auto centers container */
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+  }
+
+      footer{
+background-color: plum;
+width:910px;
+height:100px;
+margin: 0 auto;
+  }
+  nav{
+background-color: skyblue;
+    width: 500px;
+    margin: 0 auto; /*centers*/
+  }
+
+  nav ul{
+
+
+  }
+
+  nav ul li {
+list-style: none;
+display: inline-block;  /*put next to each other */
+margin-right:20px;
+padding:10px;
+
+  }
+
+
+nav ul li a {
+text-decoration: none;
+color: black;
+font-size:20px;
+
+}
+nav ul li:hover {
+background-color:white;
+padding:10px;
+
+}
+
+#grid1{
+width:800px;
+height: auto;
+margin: 0 auto;
+display: grid;
+grid-template-rows: 150px;
+grid-template-columns: 200px 580px;
+grid-column-gap: 20px;
+/*adjust for column gap!!!! if 600px and gap is 20px then write in as 590px!*/
+}
+#grid2{
+width: 800px;
+height:auto;
+margin: 0 auto;
+display: grid;
+grid-template-rows: 250px;
+grid-template-columns: 390px 390px;
+grid-column-gap: 20px;
+
+}
+#grid2 img{
+width:300px;
+margin:0 auto;
+}
+
+#hobbies{
+  width: 800px;
+  height: auto;
+  margin: 20px auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 20px;
+}
+
+#hobbies img{
+width: 500px;
+margin:0 auto;
+
+}
