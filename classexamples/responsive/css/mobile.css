@@ -1,0 +1,46 @@
+@import "desktop.css";
+/* advantage fo doing it this way is its going to import all the styling. fonts colors width borders everything! */
+header{
+width: 400px;
+
+}
+
+main{
+width: 400px;
+
+}
+footer{
+width: 400px;
+
+}
+nav{
+  width: 350px
+}
+ nav ul li{
+display: block;
+text-align: center;
+
+ }
+ nav ul{
+   margin-left: -20px;
+ }
+
+#grid1{
+width:380px;
+display:block;
+}
+
+#grid2{
+  width:380px;
+  display:block;
+
+}
+
+#hobbies{
+  width: 380px;
+  display: block;
+}
+#hobbies img{
+  width: 380px;
+
+}
