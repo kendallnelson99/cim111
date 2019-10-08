@@ -46,6 +46,35 @@
                 margin: 0 auto;
 
 }
+nav{
+background-color: white;
+ width: 500px;
+ margin: 0 auto; /*centers*/
+}
+
+
+nav ul li {
+list-style: none;
+text-decoration: none;
+display: inline-block;  /*put next to each other */
+margin-right:20px;
+padding:10px;
+
+}
+
+
+nav ul li a {
+text-decoration: none;
+color: black;
+font-size:20px;
+
+}
+nav ul li: hover {
+background-color:white;
+padding:10px;
+
+}
+
 
           #grid1{
               width:900px;
@@ -88,7 +117,7 @@
 
 }
           #grid3 section img{
-            width:250px;
+            width:270px;
 
 }
 
@@ -103,34 +132,6 @@
             padding-top: 30px;
 /* create 2 columns where the second column is going to span 2 frames */
 
-nav{
-background-color: skyblue;
-  width: 500px;
-  margin: 0 auto; /*centers*/
-}
-
-
-nav ul li {
-list-style: none;
-text-decoration: none;
-display: inline-block;  /*put next to each other */
-margin-right:20px;
-padding:10px;
-
-}
-
-
-nav ul li a {
-text-decoration: none;
-color: black;
-font-size:20px;
-
-}
-nav ul li: hover {
-background-color:white;
-padding:10px;
-
-}
 
 
     </style>
@@ -138,13 +139,13 @@ padding:10px;
 
   <body>
     <header>
-      <h1 id="Home">Header</h1>
+      <h1 id="Home">Julian the Siamese</h1>
       <nav>
           <ul>
-            <li><a href="#home">Intro</a></li>
-            <li><a href="#aboutme">Blank</a></li>
-            <li><a href="#hobbies">Siam</a></li>
-            <li><a href="#hobbies"></a></li>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#aboutme">More</a></li>
+            <li><a href="#JNS">Julian and Stella</a></li>
+            <li><a href="#hobbies">Extra</a></li>
           </ul>
       </nav>
 
@@ -152,11 +153,10 @@ padding:10px;
 
     <main>
 <section id="grid1">
-    <p>
+    <p id="#intro">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <image id="grid1image" src="images/julian2.jpeg" alt="Baby Julian">
-      <!-- "Ice cream cone" by Mariya Shapoval (Pomatilova) is licensed under CC BY-NC-ND 4.0 -->
 
 
     <p>
@@ -171,13 +171,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 
 <section id="grid2">
-
-
-
-
-
-
-
 
 
 <section>
@@ -196,12 +189,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 
 <section id="grid3">
-<section>
+<section id=#JNS>
   <img id="grid3image" src="images/jns1.JPG" alt="julian and stella windowsill">
   </section>
 
   <section>
-    <img id="grid3image" src="images/jns.jpeg" alt="spiderman pointing meme">
+    <img id="grid3image" src="images/spiderman.jpeg" alt="spiderman pointing meme">
     <p></p>
     </section>
     <section>
