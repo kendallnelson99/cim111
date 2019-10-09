@@ -3,136 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Julian the Siamese</title>
-<style media="screen">
-
-          header{
-            background-color: lightsteelblue;
-            width:910px;
-            height:auto;
-            padding:20px 20px 20px 20px;
-
-            border-width: 0px 0px 5px 0px;
-
-
-            margin: 10px auto 30px auto; /*top right bottom left*/
-            margin-top: -10px;
-}
-
-          main{
-                width: 930px;
-                height: auto;
-                background-color: aliceblue;
-                margin: 0 auto;
-                padding-top: 20px;
-                padding-bottom: 20px;
-                padding:20px;
-                padding-right: 20px;
-                padding-left: 20px;
-
-                border-width:3px;
-                border-style: dashed;
-                border-color: MediumSlateBlue;
-        /* margin adjusts spacing around contianer, setting left and right to auto centers container */
-                margin-top: 10px;
-                margin-right: auto;
-                margin-bottom: 20px;
-                margin-left: auto;
-}
-
-          footer{
-                width:910px;
-                height:100px;
-                background-color: lightsteelblue;
-                margin: 0 auto;
-
-}
-nav{
-background-color: white;
- width: 500px;
- margin: 0 auto; /*centers*/
-}
-
-
-nav ul li {
-list-style: none;
-text-decoration: none;
-display: inline-block;  /*put next to each other */
-margin-right:20px;
-padding:10px;
-
-}
-
-
-nav ul li a {
-text-decoration: none;
-color: black;
-font-size:20px;
-
-}
-nav ul li: hover {
-background-color:white;
-padding:10px;
-
-}
-
-
-          #grid1{
-              width:900px;
-              height: auto;
-              margin: 0 auto;
-              display: grid;
-              grid-template-rows: 300px;
-              grid-template-columns: 280px 300px 280px;
-              grid-column-gap: 20px;
-
-}
-          #grid1image{
-            width: 300px;
-}
-
-
-          #grid2{
-              width:900px;
-              height: auto;
-              margin: 0 auto;
-              display: grid;
-              grid-template-rows: 300px;
-              grid-template-columns: 500px 435px ;
-              grid-column-gap: 80px;
-              padding-top:30px;
-              padding-bottom: 30px;
-
-}
-          #grid2 section img{
-            width:300px
-}
-
-          #grid3 {
-            width:900px;
-            height: auto;
-            margin: 0 auto;
-            display: grid;
-            grid-template-rows: 300px;
-            grid-template-columns: 270px 270px 270px;
-            grid-column-gap: 30px;
-
-}
-          #grid3 section img{
-            width:270px;
-
-}
-
-          #grid4{
-            width:900px;
-            height: auto;
-            margin: 0 auto;
-            display: grid;
-            grid-template-rows: 300px;
-            grid-template-columns: 280px 300px 280px;
-            grid-column-gap: 20px;
-            padding-top: 30px;
-/* create 2 columns where the second column is going to span 2 frames */
-
+    <!-- min width is greater than 600px  -->
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width:600px)">
+<!-- max-width is less than 600px -->
+  <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width:600px)">
+  <meta name="viewport" content="initial-scale=1">
+<style>
 
 
     </style>
@@ -192,7 +68,7 @@ According to Nick, Julian was giving him hell, being a pain, and peeing on his b
 
 
 <section id="grid3">
-<section id=#JNS>
+<section>
   <img id="grid3image" src="images/jns1.JPG" alt="julian and stella windowsill">
   </section>
 
