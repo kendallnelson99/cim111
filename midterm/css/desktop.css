@@ -7,7 +7,7 @@
 
             border-width: 0px 0px 5px 0px;
 
-
+            Margin:0 auto;
             margin: 10px auto 30px auto; /*top right bottom left*/
             margin-top: -10px;
 }
@@ -62,6 +62,11 @@ font-size:20px;
 
 }
 
+  nav ul li: hover {
+background-color:lightsteelblue;
+    padding:10px;
+  }
+
           #grid1{
               width:900px;
               height: auto;
@@ -77,23 +82,7 @@ font-size:20px;
 }
 
 
-          #grid2{
-              width:900px;
-              height: auto;
-              margin: 0 auto;
-              display: grid;
-              grid-template-rows: 300px;
-              grid-template-columns: 500px 435px ;
-              grid-column-gap: 80px;
-              padding-top:30px;
-              padding-bottom: 30px;
-
-}
-          #grid2 section img{
-            width:300px
-}
-
-          #grid3 {
+          #grid2 {
             width:900px;
             height: auto;
             margin: 0 auto;
@@ -103,10 +92,24 @@ font-size:20px;
             grid-column-gap: 30px;
 
 }
-          #grid3 section img{
+          #grid2 section img{
             width:270px;
 
 }
+#grid3{
+    width:900px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 500px 435px ;
+    grid-column-gap: 80px;
+    padding-top:30px;
+    padding-bottom: 30px;
+
+}
+#grid3 section img{
+  width:300px}
 
           #grid4{
             width:900px;
@@ -114,13 +117,11 @@ font-size:20px;
             margin: 0 auto;
             display: grid;
             grid-template-rows: 300px;
-            grid-template-columns: 280px 300px 280px;
+            grid-template-columns: 270px 270px 270px;
             grid-column-gap: 20px;
-            padding-top: 30px;
+            padding-top:;
 
-
-            nav ul li: hover {
-            background-color:lightsteelblue;
-            padding:10px;
-
+}
+            #grid4 section img{
+              width:270px;
             }
