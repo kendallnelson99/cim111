@@ -104,7 +104,7 @@ background-color:lightsteelblue;
     display: grid;
     grid-template-rows: 300px;
     grid-template-columns: 440px 450px ;
-    grid-column-gap: 80px;
+    grid-column-gap: 110px;
     padding-top:30px;
     padding-bottom: 30px;
 
