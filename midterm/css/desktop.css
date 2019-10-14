@@ -4,7 +4,7 @@
             width:910px;
             height:auto;
             padding:20px 20px 20px 20px;
-            font-family: 'Merriweather', serif;
+
 
             border-width: 0px 0px 5px 0px;
 
@@ -44,7 +44,7 @@
 
 nav{
 background-color: white;
- width: 500px;
+ width: 550px;
  margin: 0 auto; /*centers*/
 }
 nav ul li {
@@ -103,7 +103,7 @@ background-color:lightsteelblue;
     margin: 0 auto;
     display: grid;
     grid-template-rows: 300px;
-    grid-template-columns: 500px 435px ;
+    grid-template-columns: 440px 450px ;
     grid-column-gap: 80px;
     padding-top:30px;
     padding-bottom: 30px;
@@ -113,16 +113,16 @@ background-color:lightsteelblue;
   width:300px}
 
           #grid4{
-            width:900px;
-            height: auto;
+            width:590px;
+            height:auto;
             margin: 0 auto;
             display: grid;
-            grid-template-rows: 300px;
-            grid-template-columns: 270px 270px 270px;
-            grid-column-gap: 20px;
-            padding-top:;
+            grid-template-rows: 1fr;
+            /* frame or fr size is determined by the size of the largest element*/
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
 
 }
             #grid4 section img{
-              width:270px;
+              width:300px;
             }
