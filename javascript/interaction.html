@@ -13,19 +13,22 @@
   <body>
 
     <h1 id="colorChange">Click here to Change background color</h1>
-    <h1 id="colorChange2">Click here to Change Background to Orange</h1>
+    <h1 id="colorChange2">How to make Mini Oreo Cheesecake!</h1>
 
     <ul>
-<li id="info1" class="info">Info 1</li>
-<li id="info2" class="info">Info 2</li>
-<li id="info3" class="info">Info 3</li>
+<li id="ingredients" class="info">Ingredients</li>
+<li id="info1" class="info">Step 1</li>
+<li id="info2" class="info">Step 2</li>
+<li id="info3" class="info">Step 3</li>
+<li id="info4" class="info">Step 4</li>
+<li id="info5" class="info">Step 5</li>
       </ul>
 
       <p id="addInfo"></p>
 <!-- absolute/remote link Choose one or the other-->
   <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- relative link -->
-    <script type="text/javascript" src="js/jquery.js"></script>
+
 
     <script type="text/javascript">
       $(document).ready (function(){
@@ -41,13 +44,15 @@ $("#colorChange2").click(function(){
 
 
 //action when your mouse hovers over an element
-$("#info1").mouseenter(function(){
-$("#addInfo").html("Hello all");
+$("#ingredients").mouseenter(function(){
+$("#addInfo").html("
+16 oz. of cream cheese, 1/4 cup sour cream, 1/2 cup of sugar, 1 tbsp. vanilla extract, 2 eggs, 12 oreos & extra for topping
+");
 
 }); //end of info1 mouseenter
 
-$("#info2").mouseenter(function(){
-$("#addInfo").html("<strong>this is bold</strong>");
+$("#info1").mouseenter(function(){
+$("#addInfo").html("<strong>Mix cream cheese, sour cream, sugar, vanilla extract, and eggs until its combined</strong>");
 
 }); //end of info2 mouseenter
 
@@ -56,7 +61,14 @@ $("#addInfo").html("<img src='https://farm3.staticflickr.com/2329/1753895961_a7d
 
 }); //end of info3 mouseenter
 //single quotes
+$("#info4").mouseenter(function(){
+$("#addInfo").html("<img src='https://farm3.staticflickr.com/2329/1753895961_a7d6bf6fd0_b.jpg'alt='img1'>");
 
+});
+$("#info5").mouseenter(function(){
+$("#addInfo").html("<img src='https://farm3.staticflickr.com/2329/1753895961_a7d6bf6fd0_b.jpg'alt='img1'>");
+
+});
 
 $("#info1").mouseleave(function(){
 $("#addInfo").html("");
