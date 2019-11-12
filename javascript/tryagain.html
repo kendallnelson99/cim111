@@ -4,6 +4,58 @@
     <meta charset="utf-8">
     <title>Show Hide Example</title>
     <style media="screen">
+
+      header{
+        background-color: CornflowerBlue;
+        width:910px;
+        height:auto;
+        padding:20px 20px 20px 20px;
+
+
+        border-width: 0px 0px 5px 0px;
+
+        margin:0 auto;
+        margin: 10px auto 30px auto; /*top right bottom left*/
+        margin-top: -10px;
+      }
+main{
+  width: 930px;
+  height: auto;
+  background-color: aliceblue;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding:20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border-width:3px;
+  border-style: dashed;
+  border-color: navy;
+
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+footer{
+      width:910px;
+      height:100px;
+      background-color: CornflowerBlue;
+      margin: 0 auto;
+
+}
+header h1{
+  text-align: center;
+}
+
+main h2{
+  text-align: center;
+}
+main section{
+text-align:center;
+
+}
       .grid {
 display:grid;
 grid-template-rows: 1fr;
@@ -17,15 +69,23 @@ img{
     </style>
   </head>
   <body>
+    <Header>
     <h1>How to make Mini Oreo Cheesecake</h1>
+</header>
 
 
-
-
+<main>
 <h2><p id="section2mouse">Ingredients</p></h2>
 
 <section id="section2" class="grid">
-<h4>16 oz of cream cheese, 1/4 cup of sour cream, 1/2 cup of surgar, 1 tbsp vanilla extract, 2 eggs, 12 oreos & extra for topping</h4>
+<h4><ul>
+<li>16 oz of Cream cheese</li>
+<li>1/4 cup of sour cream</li>
+<li>1/2 cup of sugar</li>
+<li>1 tbsp vanilla extract</li>
+<li>2 eggs</li>
+<li>12 oreos & extra for toppings</li>
+</ul></h4>
 
 <p><img src="images/ingedients.JPG" alt="ingedients"></p>
 
@@ -64,15 +124,24 @@ img{
 <h4>Bake in Oven at 275 degrees for 22 minutes</h4>
 <p>  <img src="images/bake.JPG" alt="bake"></p>
 </section>
+<h2><p id="section8mouse">Step 6</p></h2>
+
+<section id="section8" class="grid">
+<h4>Once out of the oven, let cool completely before putting in the fridge to chill</h4>
+<p>  <img src="images/chill.JPG" alt="chill"></p>
+</section>
 
 
-<h1 id="section1Show">Section 1 Show </h1>
-<h1 id="section1Hide">Section 1 Hide </h1>
+
+
+
+<h1 id="section1Show">Click here for Final Product! </h1>
+<h1 id="section1Hide">Go away Final Product! </h1>
 <section id="section1" class="grid">
 <h2>Section 1 Info</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</section>
-
+</section></main>
+<footer></footer>
 <!-- <h1 id="openSections">Open all sections</h1> -->
 
 <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -127,6 +196,12 @@ $("#section2mouse").mouseleave(function(){
                               $("#section7mouse").mouseleave(function(){
                                 $("#section7").hide();
                                     });
+                                    $("#section8mouse").mouseenter(function(){
+                                      $("#section8").show();
+                                    });
+                                    $("#section8mouse").mouseleave(function(){
+                                      $("#section8").hide();
+                                          });
 
 
 
