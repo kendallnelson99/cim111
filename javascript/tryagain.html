@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOC<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -8,28 +8,72 @@
 display:grid;
 grid-template-rows: 1fr;
 grid-template-columns: 1fr 2fr;
+}
+img{
+  width: 300px;
+}
 
-      }
+
     </style>
   </head>
   <body>
-    <h1 id="section1Show">Section 1 Show </h1>
-    <h1 id="section1Hide">Section 1 Hide </h1>
+    <h1>How to make Mini Oreo Cheesecake</h1>
 
+
+
+
+<h2><p id="section2mouse">Ingredients</p></h2>
+
+<section id="section2" class="grid">
+<h4>16 oz of cream cheese, 1/4 cup of sour cream, 1/2 cup of surgar, 1 tbsp vanilla extract, 2 eggs, 12 oreos & extra for topping</h4>
+
+<p><img src="images/ingedients.JPG" alt="ingedients"></p>
+
+</section>
+<h2><p id="section3mouse">Step 1</p></h2>
+
+<section id="section3" class="grid">
+<h4>Combine cream cheese, sour cream, sugar, vanilla, and eggs in a large mixing bowl</h4>
+<p>  <img src="images/mix.JPG" alt="mix"></p>
+</section>
+
+
+<h2><p id="section4mouse">Step 2</p></h2>
+
+<section id="section4" class="grid">
+<h4>Place 1 oreo in cupcake liner</h4>
+<p>  <img src="images/placeoreo.JPG" alt="placeoreo"></p>
+</section>
+
+<h2><p id="section5mouse">Step 3</p></h2>
+
+<section id="section5" class="grid">
+<h4>Pour in cheesecake batter</h4>
+<p>  <img src="images/pour.JPG" alt="pour"></p>
+</section>
+
+<h2><p id="section6mouse">Step 4</p></h2>
+
+<section id="section6" class="grid">
+<h4>Crush desired amount of oreos in a bag and place on top of Cheesecake as topping</h4>
+<p>  <img src="images/toppings.JPG" alt="toppings"></p>
+</section>
+<h2><p id="section7mouse">Step 5</p></h2>
+
+<section id="section7" class="grid">
+<h4>Bake in Oven at 275 degrees for 22 minutes</h4>
+<p>  <img src="images/bake.JPG" alt="bake"></p>
+</section>
+
+
+<h1 id="section1Show">Section 1 Show </h1>
+<h1 id="section1Hide">Section 1 Hide </h1>
 <section id="section1" class="grid">
 <h2>Section 1 Info</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </section>
 
-<p id="section2mouse">Mouseover to show and hide section 2</p>
-
-<section id="section2" class="grid">
-<h2>Section 2 Info</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</section>
-
-
-<h1 id="openSections">Open all sections</h1>
+<!-- <h1 id="openSections">Open all sections</h1> -->
 
 <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -52,6 +96,39 @@ $("#section2mouse").mouseenter(function(){
 $("#section2mouse").mouseleave(function(){
   $("#section2").hide();
       });
+
+      $("#section3mouse").mouseenter(function(){
+        $("#section3").show();
+      });
+      $("#section3mouse").mouseleave(function(){
+        $("#section3").hide();
+            });
+            $("#section4mouse").mouseenter(function(){
+              $("#section4").show();
+            });
+            $("#section4mouse").mouseleave(function(){
+              $("#section4").hide();
+                  });
+                  $("#section5mouse").mouseenter(function(){
+                    $("#section5").show();
+                  });
+                  $("#section5mouse").mouseleave(function(){
+                    $("#section5").hide();
+                        });
+                        $("#section6mouse").mouseenter(function(){
+                          $("#section6").show();
+                        });
+                        $("#section6mouse").mouseleave(function(){
+                          $("#section6").hide();
+                              });
+                              $("#section7mouse").mouseenter(function(){
+                                $("#section7").show();
+                              });
+                              $("#section7mouse").mouseleave(function(){
+                                $("#section7").hide();
+                                    });
+
+
 
       $("#openSections").click(function(){
       //$(".grid").hide();//
