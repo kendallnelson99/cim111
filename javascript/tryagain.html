@@ -1,8 +1,8 @@
-<!DOC<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Show Hide Example</title>
+    <title>Mini Oreo Cheesecake</title>
     <style media="screen">
 
       header{
@@ -70,7 +70,7 @@ img{
   </head>
   <body>
     <Header>
-    <h1>How to make Mini Oreo Cheesecake</h1>
+    <div class="mySelector">How to make Mini Oreo Cheesecake</div>
 </header>
 
 
@@ -127,7 +127,7 @@ img{
 <h2><p id="section8mouse">Step 6</p></h2>
 
 <section id="section8" class="grid">
-<h4>Once out of the oven, let cool completely before putting in the fridge to chill</h4>
+<h4>Once out of the oven, let cool completely before putting in the fridge to chill for 3 hours before consumption</h4>
 <p>  <img src="images/chill.JPG" alt="chill"></p>
 </section>
 
@@ -138,18 +138,25 @@ img{
 <h1 id="section1Show">Click here for Final Product! </h1>
 <h1 id="section1Hide">Go away Final Product! </h1>
 <section id="section1" class="grid">
-<h2>Section 1 Info</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h2>Voila!</h2>
+<p><img src="images/final.JPG"></p>
 </section></main>
 <footer></footer>
 <!-- <h1 id="openSections">Open all sections</h1> -->
+<link rel="stylesheet" type="text/css" href="jquery.funnyText.css" />
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="jquery.funnyText.js"></script>
 <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
       $("#section1").hide();
       $(".grid").hide(); //this will hide all of my sections that have a .grid class//
 
+      $(document).ready(function() {
+      	$('.mySelector').funnyText();
+      });
 
         $("#section1Show").click(function(){
           $("#section1").show();
