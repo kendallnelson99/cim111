@@ -3,138 +3,224 @@
   <head>
     <meta charset="utf-8">
     <title>Mini Oreo Cheesecake</title>
-    <!-- min width is greater than 600px  -->
-    <link rel="stylesheet" href="desktop.css" media="only screen and (min-width:600px)">
-<!-- max-width is less than 600px -->
+    <style media="screen">
 
-  <meta name="viewport" content="initial-scale=1">
-<style>
+      header{
+        background-color: CornflowerBlue;
+        width:910px;
+        height:auto;
+        padding:20px 20px 20px 20px;
+
+
+        border-width: 0px 0px 5px 0px;
+
+        margin:0 auto;
+        margin: 10px auto 30px auto; /*top right bottom left*/
+        margin-top: -10px;
+      }
+main{
+  width: 930px;
+  height: auto;
+  background-color: aliceblue;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding:20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border-width:3px;
+  border-style: dashed;
+  border-color: navy;
+
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+footer{
+      width:910px;
+      height:100px;
+      background-color: CornflowerBlue;
+      margin: 0 auto;
+
+}
+header h1{
+  text-align: center;
+}
+
+main h2{
+  text-align: center;
+}
+main section{
+text-align:center;
+
+}
+      .grid {
+display:grid;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 2fr;
+}
+img{
+  width: 300px;
+}
 
 
     </style>
   </head>
-
   <body>
-    <header>
-      <h1>How to make Mini Oreo Cheesecake</h1>
-      <nav>
-          <ul>
-            <li><a href="#ingredients">Ingredients</a></li>
-            <li><a href="#prep">Preparation</a></li>
-            <li><a href="#end">Final Product</a></li>
-
-          </ul>
-      </nav>
-
-    </header>
-
-    <main>
-<h3 id="ingredients">Ingredients</h3>
-<section class="grid1">
-
-    <p>
-    Intro Paragraph :
-
-  </p>
-    <image class="grid1image" src="oreo.jpeg" alt="Ingredients">
+    <Header>
+    <div class="mySelector">How to make Mini Oreo Cheesecake</div>
+</header>
 
 
-    <p>
-Ingredients List   </p>
+<main>
+<h2><p id="section2mouse">Ingredients</p></h2>
+
+<section id="section2" class="grid">
+<h4><ul>
+<li>16 oz of Cream cheese</li>
+<li>1/4 cup of sour cream</li>
+<li>1/2 cup of sugar</li>
+<li>1 tbsp vanilla extract</li>
+<li>2 eggs</li>
+<li>12 oreos & extra for toppings</li>
+</ul></h4>
+
+<p><img src="images/ingedients.JPG" alt="ingedients"></p>
+
+</section>
+<h2><p id="section3mouse">Step 1</p></h2>
+
+<section id="section3" class="grid">
+<h4>Combine cream cheese, sour cream, sugar, vanilla, and eggs in a large mixing bowl</h4>
+<p>  <img src="images/mix.JPG" alt="mix"></p>
+</section>
 
 
+<h2><p id="section4mouse">Step 2</p></h2>
 
+<section id="section4" class="grid">
+<h4>Place 1 oreo in cupcake liner</h4>
+<p>  <img src="images/placeoreo.JPG" alt="placeoreo"></p>
+</section>
 
+<h2><p id="section5mouse">Step 3</p></h2>
+
+<section id="section5" class="grid">
+<h4>Pour in cheesecake batter</h4>
+<p>  <img src="images/pour.JPG" alt="pour"></p>
+</section>
+
+<h2><p id="section6mouse">Step 4</p></h2>
+
+<section id="section6" class="grid">
+<h4>Crush desired amount of oreos in a bag and place on top of Cheesecake as topping</h4>
+<p>  <img src="images/toppings.JPG" alt="toppings"></p>
+</section>
+<h2><p id="section7mouse">Step 5</p></h2>
+
+<section id="section7" class="grid">
+<h4>Bake in Oven at 275 degrees for 22 minutes</h4>
+<p>  <img src="images/bake.JPG" alt="bake"></p>
+</section>
+<h2><p id="section8mouse">Step 6</p></h2>
+
+<section id="section8" class="grid">
+<h4>Once out of the oven, let cool completely before putting in the fridge to chill for 3 hours before consumption</h4>
+<p>  <img src="images/chill.JPG" alt="chill"></p>
 </section>
 
 
 
 
 
-<h3 id="section1Show"id="preparation">Mix</h3>
+<h1 id="section1Show">Click here for Final Product! </h1>
+<h1 id="section1Hide">Go away Final Product! </h1>
+<section id="section1" class="grid">
+<h2>Voila!</h2>
+<p><img src="images/final.JPG"></p>
+</section></main>
+<footer></footer>
+<!-- <h1 id="openSections">Open all sections</h1> -->
+<link rel="stylesheet" type="text/css" href="jquery.funnyText.css" />
 
-<section class="grid2">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-<section>
-  <h4>Cream Cheese, Sour Cream, Sugar, Vanilla, 2 Eggs</h4>
-  <img class="grid2image" src="oreo.jpeg" alt="Ingredients UnMix">
-  </section>
+<script type="text/javascript" src="jquery.funnyText.js"></script>
+<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("#section1").hide();
+      $(".grid").hide(); //this will hide all of my sections that have a .grid class//
 
-  <section>
-    <h1>Combine</h1>
-    <img class="grid2image" src="oreo.jpeg" alt="Ingredients Mixed">
+      $(document).ready(function() {
+      	$('.mySelector').funnyText();
+      });
 
-    </section>
+        $("#section1Show").click(function(){
+          $("#section1").show();
 
-
-    </section>
-    <h3 id="more">Preparation</h3>
-    <section class="grid3">
-
-
-    <section>
-      <img class="grid3image" src="oreo.jpeg" alt="Liners w Oreo">
-    </section>
-
-    <section>
-    <img class="grid3image" src="oreo.jpeg" alt="Pour Batter in">
-
-
-    </section>
-
-    </section>
-
-
-<h3 id="">Bake & Refrigerate</h3>
-<section class="grid4">
-  <section>
-
-<img class="grid4image" src="oreo.jpeg" alt="Bake">
-</section>
-<section>
-<img class="grid4image" src="oreo.jpeg" alt="fridge">
-
-</section>
-
-</section>
-
-<h3 id="Final"> Final Product</h3>
-<section class="grid5">
-  <section>
-<img class="grid5image" src="oreo.jpeg" alt="Final"
-  </section>
-  <section>
-
-
-  </section>
-  </section>
-
-
-
-    </main>
-
-    <footer>
-
-
-
-    </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript">
-
-$(document).ready(function(){
-
-
-    $("#section1Show").click(function(){
-      $("#section1").show();
-
-    });
+        });
 $("#section1Hide").click(function(){
-$("#section1").hide();
+  $("#section1").hide();
+});
+
+$("#section2mouse").mouseenter(function(){
+  $("#section2").show();
+});
+$("#section2mouse").mouseleave(function(){
+  $("#section2").hide();
+      });
+
+      $("#section3mouse").mouseenter(function(){
+        $("#section3").show();
+      });
+      $("#section3mouse").mouseleave(function(){
+        $("#section3").hide();
+            });
+            $("#section4mouse").mouseenter(function(){
+              $("#section4").show();
+            });
+            $("#section4mouse").mouseleave(function(){
+              $("#section4").hide();
+                  });
+                  $("#section5mouse").mouseenter(function(){
+                    $("#section5").show();
+                  });
+                  $("#section5mouse").mouseleave(function(){
+                    $("#section5").hide();
+                        });
+                        $("#section6mouse").mouseenter(function(){
+                          $("#section6").show();
+                        });
+                        $("#section6mouse").mouseleave(function(){
+                          $("#section6").hide();
+                              });
+                              $("#section7mouse").mouseenter(function(){
+                                $("#section7").show();
+                              });
+                              $("#section7mouse").mouseleave(function(){
+                                $("#section7").hide();
+                                    });
+                                    $("#section8mouse").mouseenter(function(){
+                                      $("#section8").show();
+                                    });
+                                    $("#section8mouse").mouseleave(function(){
+                                      $("#section8").hide();
+                                          });
+
+
+
+      $("#openSections").click(function(){
+      //$(".grid").hide();//
+        $(".grid").toggle();
+      });
 });
 
 
-});
 
-      </script>
+  </script>
+
   </body>
 </html>
