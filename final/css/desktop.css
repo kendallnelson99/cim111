@@ -68,30 +68,34 @@ font-size:20px;
 }
 
 nav ul li:hover {
-background-color:lightsteelblue;
+background-color:SandyBrown;
 padding:10px;
 
 }
 
 
+#intro {
+text-align: center;
 
+}
 
 #intro section img {
   border-radius: 50%;
   width: 200px;
-  margin:0 auto;
+  margin: 0 auto;
 
 }
 
 #grid1{
-  width:590px;
+  width:600px;
   height:auto;
   margin: 0 auto;
   display: grid;
   grid-template-rows: 1fr;
   /* frame or fr size is determined by the size of the largest element*/
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
+  grid-column-gap: 30px;
+  padding-bottom: 50px;
 
   }
 #grid1image{
@@ -100,14 +104,15 @@ padding:10px;
 
 
 #grid2 {
-  width:590px;
+  width:600px;
   height:auto;
   margin: 0 auto;
   display: grid;
   grid-template-rows: 1fr;
   /* frame or fr size is determined by the size of the largest element*/
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
+  grid-column-gap: 30px;
+  padding-bottom: 50px;
 
   }
 #grid2 section img{
@@ -115,14 +120,15 @@ padding:10px;
 
 }
 #grid3{
-  width:590px;
+  width:600px;
   height:auto;
   margin: 0 auto;
   display: grid;
   grid-template-rows: 1fr;
   /* frame or fr size is determined by the size of the largest element*/
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
+  grid-column-gap: 30px;
+  padding-bottom: 50px;
 
   }
 #grid3 section img{
